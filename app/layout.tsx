@@ -53,6 +53,17 @@ export const metadata: Metadata = {
       "Software Engineer specializing in scalable systems and modern web development. View my portfolio.",
     images: ["/assets/images/me.webp"],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const jsonLd = {
