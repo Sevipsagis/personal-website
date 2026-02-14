@@ -34,6 +34,7 @@ export function Sidebar() {
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex w-full justify-start"
+        aria-label="Search for Nuttapol Phomthon on Google"
       >
         <div className="bg-neo-black text-neo-white font-body border-neo-black hover:text-neo-black hover:bg-neo-green inline-block rotate-1 cursor-pointer rounded border-2 px-3 py-1 text-sm font-bold transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-rotate-1">
           @Sevipsagis
@@ -112,7 +113,10 @@ export function Sidebar() {
             className="flex-1"
             aria-label="Visit LinkedIn Profile"
           >
-            <NeoButton className="bg-neo-blue hover:bg-neo-black text-neo-black hover:text-neo-blue flex w-full items-center justify-center rounded-xl py-3">
+            <NeoButton
+              as="div"
+              className="bg-neo-blue hover:bg-neo-black text-neo-black hover:text-neo-blue flex w-full items-center justify-center rounded-xl py-3"
+            >
               <LinkedinIcon className="h-6 w-6 transform transition-transform hover:scale-110" />
             </NeoButton>
           </a>
@@ -123,7 +127,10 @@ export function Sidebar() {
             className="flex-1"
             aria-label="Visit GitHub Profile"
           >
-            <NeoButton className="bg-neo-pink hover:bg-neo-black text-neo-black hover:text-neo-pink flex w-full items-center justify-center rounded-xl py-3">
+            <NeoButton
+              as="div"
+              className="bg-neo-pink hover:bg-neo-black text-neo-black hover:text-neo-pink flex w-full items-center justify-center rounded-xl py-3"
+            >
               <GithubIcon className="h-6 w-6 transform transition-transform hover:scale-110" />
             </NeoButton>
           </a>

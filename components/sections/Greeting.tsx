@@ -5,6 +5,7 @@ import { NeoCard } from "@/components/ui/NeoCard";
 export function Greeting() {
   return (
     <NeoCard
+      as="section"
       className="bg-neo-pink relative flex min-h-[240px] flex-col justify-center overflow-hidden rounded-2xl p-8 md:col-span-12 lg:col-span-8"
       hoverEffect="rotate"
     >
@@ -22,14 +23,13 @@ export function Greeting() {
             Open for work
           </span>
         </div>
-        <h1 className="text-neo-black mb-2 text-5xl leading-[0.85] tracking-tight uppercase drop-shadow-sm md:text-7xl">
+        <h1 className="text-neo-black text-5xl leading-[0.95] tracking-tight uppercase drop-shadow-sm md:text-7xl">
           Enjoy{" "}
           <span className="text-outline text-neo-white! hover:text-neo-green hover:text-outline-0 cursor-default transition-all">
             making
           </span>
-        </h1>
-        <h1 className="text-neo-black text-5xl leading-[0.85] tracking-tight uppercase drop-shadow-sm md:text-7xl">
-          <span className="bg-neo-black text-neo-white box-decoration-clone px-4 leading-[1.1]">
+          <br />
+          <span className="bg-neo-black text-neo-white box-decoration-clone px-2 leading-[1.1]">
             random stuff
           </span>
         </h1>

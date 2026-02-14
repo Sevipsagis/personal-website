@@ -41,31 +41,31 @@ export function Experience() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <ul className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         {experiences.map((exp) => (
-          <div
-            key={exp.id}
-            className="shadow-hard hover:shadow-hard-hover group relative flex h-full flex-col rounded-xl border-3 border-black bg-white p-6 transition-all hover:-translate-y-2"
-          >
-            <span
-              className={cn(
-                "mb-3 inline-block w-fit rounded border-2 border-transparent px-2 py-1 text-xs font-black",
-                exp.periodColor
-              )}
-            >
-              {exp.period}
-            </span>
+          <li key={exp.id}>
+            <article className="shadow-hard hover:shadow-hard-hover group relative flex h-full flex-col rounded-xl border-3 border-black bg-white p-6 transition-all hover:-translate-y-2">
+              <time
+                className={cn(
+                  "mb-3 inline-block w-fit rounded border-2 border-transparent px-2 py-1 text-xs font-black",
+                  exp.periodColor
+                )}
+                dateTime={exp.period} // Ideally this should be a valid date string, but for now passing the display string or fixing it later
+              >
+                {exp.period}
+              </time>
 
-            <h4 className="text-2xl">{exp.role}</h4>
-            <p className="text-neo-pink mt-1 text-sm font-bold">
-              {exp.company}
-            </p>
-            <p className="border-neo-black mt-4 border-l-2 pl-3 text-sm leading-relaxed font-medium">
-              {exp.desc}
-            </p>
-          </div>
+              <h4 className="text-2xl">{exp.role}</h4>
+              <p className="text-neo-pink mt-1 text-sm font-bold">
+                {exp.company}
+              </p>
+              <p className="border-neo-black mt-4 border-l-2 pl-3 text-sm leading-relaxed font-medium">
+                {exp.desc}
+              </p>
+            </article>
+          </li>
         ))}
-      </div>
+      </ul>
     </NeoCard>
   );
 }

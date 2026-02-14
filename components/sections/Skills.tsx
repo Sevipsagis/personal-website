@@ -107,9 +107,9 @@ export function Skills() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-wrap gap-2.5">
+      <ul className="relative z-10 flex flex-wrap gap-2.5">
         {skills.map((skill) => (
-          <span
+          <li
             key={skill.name}
             className={cn(
               "border-neo-black cursor-default rounded-lg border-2 px-4 py-2 text-sm font-bold shadow-[3px_3px_0px_0px_#0f0f0f] transition-all",
@@ -119,9 +119,9 @@ export function Skills() {
             )}
           >
             {skill.name}
-          </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </NeoCard>
   );
 }
