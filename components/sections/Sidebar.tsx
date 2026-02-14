@@ -43,7 +43,7 @@ export function Sidebar() {
         <div className="relative mb-4 transition-transform duration-300 group-hover:scale-105">
           <div className="bg-neo-yellow border-neo-black shadow-hard relative flex h-36 w-36 items-center justify-center overflow-hidden rounded-full border-4">
             <Image
-              src="/me.webp"
+              src="/assets/images/me.webp"
               alt="Nuttapol Phomthon Profile Picture"
               width={144}
               height={144}

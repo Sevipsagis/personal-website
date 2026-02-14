@@ -12,10 +12,15 @@ const urbanist = Urbanist({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sevipsagis.dev"),
+  icons: {
+    icon: "/assets/icons/icon.png",
+    apple: "/assets/icons/apple-icon.png",
+  },
   title: {
     default: "Nuttapol Phomthon | Sevipsagis",
     template: "%s | Sevipsagis",
   },
+  manifest: "/manifest.webmanifest",
   description:
     "Software Engineer specializing in scalable systems and modern web development. View my portfolio.",
   keywords: ["Software Engineer", "React", "Next.js", "TypeScript", "Thailand"],
@@ -34,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Nuttapol Phomthon Personal Website",
     images: [
       {
-        url: "/me.webp",
+        url: "/assets/images/me.webp",
         width: 1200,
         height: 630,
         alt: "Nuttapol Phomthon Personal Website",
@@ -46,10 +51,7 @@ export const metadata: Metadata = {
     title: "Nuttapol Phomthon | Sevipsagis",
     description:
       "Software Engineer specializing in scalable systems and modern web development. View my portfolio.",
-    images: ["/me.webp"],
-  },
-  icons: {
-    icon: "/favicon.ico",
+    images: ["/assets/images/me.webp"],
   },
 };
 
@@ -59,7 +61,7 @@ const jsonLd = {
   name: "Nuttapol Phomthon",
   jobTitle: "Software Engineer",
   url: "https://sevipsagis.dev",
-  image: "https://sevipsagis.dev/me.webp",
+  image: "https://sevipsagis.dev/assets/images/me.webp",
   description:
     "Software Engineer specializing in scalable systems and modern web development.",
   sameAs: [
