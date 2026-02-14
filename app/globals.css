@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-neo-bg: #e0e7ff;
+  --color-neo-pink: #ff97d5;
+  --color-neo-green: #a3fda1;
+  --color-neo-blue: #8ab4f8;
+  --color-neo-yellow: #fff59d;
+  --color-neo-black: #0f0f0f;
+  --color-neo-white: #ffffff;
+
+  /* Fonts */
+  --font-display: var(--font-urbanist), sans-serif;
+  --font-body: var(--font-urbanist), sans-serif;
+
+  /* Shadows */
+  --shadow-hard: 4px 4px 0px 0px #0f0f0f;
+  --shadow-hard-hover: 6px 6px 0px 0px #0f0f0f;
+  --shadow-hard-active: 1px 1px 0px 0px #0f0f0f;
+
+  /* Animations */
+  --animate-wiggle: wiggle 0.5s ease-in-out infinite;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Custom Base Styles */
+body {
+  background-color: var(--color-neo-bg);
+  background-image:
+    linear-gradient(rgba(138, 180, 248, 0.3) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(138, 180, 248, 0.3) 2px, transparent 2px);
+  background-size:
+    24px 24px,
+    24px 24px;
+  background-position:
+    0 0,
+    0 0;
+  color: var(--color-neo-black);
+  font-family: var(--font-urbanist);
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Typography Utilities */
+.font-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.font-content {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Utility Classes for Neo Effects */
+.text-outline {
+  -webkit-text-stroke: 1.5px #0f0f0f;
+  color: transparent;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
