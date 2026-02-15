@@ -54,7 +54,7 @@ export function Sidebar() {
           </div>
           {/* Status Indicator */}
           <div className="bg-neo-green border-neo-black absolute right-1 bottom-1 z-20 flex h-8 w-8 items-center justify-center rounded-full border-3">
-            <div className="h-2 w-2 animate-ping rounded-full bg-black" />
+            <div className="bg-neo-black h-2 w-2 animate-ping rounded-full" />
           </div>
         </div>
 

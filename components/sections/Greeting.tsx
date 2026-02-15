@@ -17,7 +17,7 @@ export function Greeting() {
       <div className="relative z-10">
         <div className="bg-neo-white border-neo-black shadow-hard-sm mb-6 inline-flex w-fit -rotate-1 transform items-center gap-3 rounded-full border-3 px-4 py-2 transition-transform select-none hover:rotate-0">
           <div className="bg-neo-green border-neo-black flex h-3 w-3 items-center justify-center rounded-full border">
-            <div className="h-1 w-1 animate-ping rounded-full bg-black" />
+            <div className="bg-neo-black h-1 w-1 animate-ping rounded-full" />
           </div>
           <span className="text-xs font-bold tracking-widest uppercase">
             Open for work

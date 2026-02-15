@@ -17,7 +17,7 @@ const experiences = [
     company: "SCB Tech X",
     period: "2021-2025",
     desc: "Worked closely with designers, developers, and operations teams to develop a DevOps as a Service platform.",
-    periodColor: "bg-neo-green text-black border-black",
+    periodColor: "bg-neo-green text-neo-black border-neo-black",
   },
   {
     id: 3,
@@ -25,16 +25,16 @@ const experiences = [
     company: "SCB – Siam Commercial Bank",
     period: "2019-2021",
     desc: "Developed Open APIs for developers and business partners to integrate their applications with SCB services.",
-    periodColor: "bg-neo-green text-black border-black",
+    periodColor: "bg-neo-green text-neo-black border-neo-black",
   },
 ];
 
 export function Experience() {
   return (
-    <NeoCard className="bg-neo-blue relative rounded-2xl p-8 text-black md:col-span-12">
-      <div className="mb-8 flex flex-col items-start justify-between border-b-4 border-black pb-4 lg:flex-row lg:items-end">
+    <NeoCard className="bg-neo-blue text-neo-black relative rounded-2xl p-8 md:col-span-12">
+      <div className="border-neo-black mb-8 flex flex-col items-start justify-between border-b-4 pb-4 lg:flex-row lg:items-end">
         <div>
-          <span className="font-title mb-1 inline-block -rotate-1 bg-black px-2 py-0.5 text-lg text-white">
+          <span className="font-title bg-neo-black mb-1 inline-block -rotate-1 px-2 py-0.5 text-lg text-white">
             Career Path
           </span>
           <h3 className="text-5xl uppercase">Experience</h3>
@@ -44,7 +44,7 @@ export function Experience() {
       <ul className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         {experiences.map((exp) => (
           <li key={exp.id}>
-            <article className="shadow-hard hover:shadow-hard-hover group relative flex h-full flex-col rounded-xl border-3 border-black bg-white p-6 transition-all hover:-translate-y-2">
+            <article className="shadow-hard hover:shadow-hard-hover group border-neo-black relative flex h-full flex-col rounded-xl border-3 bg-white p-6 transition-all hover:-translate-y-2">
               <time
                 className={cn(
                   "mb-3 inline-block w-fit rounded border-2 border-transparent px-2 py-1 text-xs font-black",
