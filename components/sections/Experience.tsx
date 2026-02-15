@@ -8,6 +8,7 @@ const experiences = [
     role: "Software Engineer",
     company: "SCB Tech X",
     period: "2025-PRESENT",
+    datetime: "2025",
     desc: "Developed software systems tailored to each client's specific needs, high quality, maintainable and scalable.",
     periodColor: "bg-neo-black text-neo-green",
   },
@@ -16,6 +17,7 @@ const experiences = [
     role: "Platform Service Engineer",
     company: "SCB Tech X",
     period: "2021-2025",
+    datetime: "2021/2025",
     desc: "Worked closely with designers, developers, and operations teams to develop a DevOps as a Service platform.",
     periodColor: "bg-neo-green text-neo-black border-neo-black",
   },
@@ -24,6 +26,7 @@ const experiences = [
     role: "Software Engineer",
     company: "SCB – Siam Commercial Bank",
     period: "2019-2021",
+    datetime: "2019/2021",
     desc: "Developed Open APIs for developers and business partners to integrate their applications with SCB services.",
     periodColor: "bg-neo-green text-neo-black border-neo-black",
   },
@@ -50,7 +53,7 @@ export function Experience() {
                   "mb-3 inline-block w-fit rounded border-2 border-transparent px-2 py-1 text-xs font-black",
                   exp.periodColor
                 )}
-                dateTime={exp.period} // Ideally this should be a valid date string, but for now passing the display string or fixing it later
+                dateTime={exp.datetime}
               >
                 {exp.period}
               </time>
