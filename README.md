@@ -1,6 +1,6 @@
-# Nuttapol Phomthon | Portfolio Website
+# Nuttapol Phomthon | Personal Website
 
-A high-performance, neo-brutalist personal portfolio website built with modern web technologies. Designed to showcase skills, experience, and personality with a unique, bold aesthetic.
+A high-performance, neo-brutalist personal personal website built with modern web technologies. Designed to showcase skills, experience, and personality with a unique, bold aesthetic.
 
 ![Project Preview](/og-image.jpg)
 
